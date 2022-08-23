@@ -2,23 +2,31 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  
+  const lettername = 'vitor';
+
+  const name = lettername.toUpperCase();
+
+  function sun(a, b)
+  {
+    return a + b;
+  };
+
+  const url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY0YffJXSjSMEwLUzpKR_PHlgykcnGzbdRkAqKdXCfXg&s";
+
+  // ===== timer ======
+  var hours = new Date().getHours();
+  var minutes = new Date().getMinutes();
+  var seconds = new Date().getSeconds();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+    <section class="hello">
+      <h1> Hello, {name}! </h1>
+      <p>soma: {sun(20, 20)}</p>
+      <h1>{hours} : {minutes} : {seconds}</h1>
+      <img src={url} />
+    </section>
   );
 }
 
