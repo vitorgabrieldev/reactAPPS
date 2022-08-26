@@ -1,12 +1,11 @@
-import './headerStyle.css'
+
 
 function HeaderPage()
 {
     return (
         <header className="HeaderPage">
-            <h1>This is a header !</h1>
+            <h1>Header</h1>
         </header>
-
     )
 }
 
